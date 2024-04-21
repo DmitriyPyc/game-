@@ -6,21 +6,29 @@
 }
 
 #dino {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-image: url(/img/-rex.png);
-    background-size: 40px 40px;
+    background-size: 50px 50px;
     position: relative;
-    top: 160px;
+    top: 150px;
 }
 
 #cactus {
-    width: 40px;
+    width: 20px;
     height: 40px;
     background-image: url(/img/cactus.png);
-    background-size: 40px 40px;
+    background-size: 20px 40px;
     position: relative;
-    top: 120px;
-    left: 560px;
-    
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 1s infinite linear;
 } 
+@-o-keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
